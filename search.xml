@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/01/20/HelloWorld/</url>
+    <content><![CDATA[<h3 id="欢迎来到我的博客世界"><a href="#欢迎来到我的博客世界" class="headerlink" title="欢迎来到我的博客世界"></a>欢迎来到我的博客世界</h3><h4 id="0-写在前面"><a href="#0-写在前面" class="headerlink" title="0 写在前面"></a>0 写在前面</h4><p>作为一个coder，这是我开通的第一个博客，这篇博文用于记录此时此刻~~</p>
+<h4 id="1-我的博客"><a href="#1-我的博客" class="headerlink" title="1 我的博客"></a>1 我的博客</h4><p>我的博客中分为四类文章：</p>
+<ul>
+<li>琴心</li>
+<li>棋魂</li>
+<li>书气</li>
+<li>画骨</li>
+</ul>
+<p>琴心是我的一些随想心得；</p>
+<p>棋魂是在代码方面的一些总结和心得；</p>
+<p>书气是一些书籍的读后感想；</p>
+<p>画骨是一些重要的说明性文章。</p>
+<p>快来看看吧！😋</p>
+]]></content>
+      <categories>
+        <category>画骨</category>
+      </categories>
+      <tags>
+        <tag>introduce</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows和Linux下系统命令</title>
+    <url>/2021/01/22/Windows%E5%92%8CLinux%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="Windows系统下命令"><a href="#Windows系统下命令" class="headerlink" title="Windows系统下命令"></a>Windows系统下命令</h2><h3 id="1、打开控制台"><a href="#1、打开控制台" class="headerlink" title="1、打开控制台"></a>1、打开控制台</h3><p>Windows+R/cmd回车</p>
+<h3 id="2、控制台操作"><a href="#2、控制台操作" class="headerlink" title="2、控制台操作"></a>2、控制台操作</h3><ul>
+<li>切换盘符：C：</li>
+<li>显示所有文件和文件夹：dir</li>
+<li>查看选项菜单：dir /?</li>
+<li>清屏：cls</li>
+<li>终止：ctrl+c</li>
+<li>进入到某一个文件夹：cd xxx</li>
+<li>当前文件夹：cd.</li>
+<li>上一级文件夹：cd..</li>
+<li>返回盘符：cd/</li>
+<li>从某一盘符直接跳转其他盘符某文件夹时没有效果，但是跳转到该盘符时将直接跳转到该盘符的制定文件夹下</li>
+<li>创建文件夹：md a\b\a\b</li>
+<li>复制文件a到b文件夹（/-y是指同名覆盖时进行提示，/y则不提示，默认不提示）：copy /-y a b</li>
+<li>创建空文件使用：copy nul a.txt</li>
+<li>创建有部分内容的文件（文件内容为helloworld）：echo helloworld&gt;c.txt</li>
+<li>移动文件a到b文件夹（/-y是指同名覆盖时进行提示，/y则不提示，默认不提示）：move /-y a b</li>
+<li>删除文件（删除某个文件，或者删除某目录下的所有文件[文件夹删不了]）：del a.txt     或      del myPic</li>
+<li>删除文件夹（默认只能删除文件夹，删除文件夹内所有内容需要加/s）：rd D:\myPic   或   rd /s mypic</li>
+<li>修改名字：ren oldname newname</li>
+<li>关机（-s关机-t关机倒计时）：shutdown -s -t 60</li>
+<li>关机（取消关机）：shutdown -a</li>
+<li>查看本机ip：ipconfig</li>
+<li>判断连接：ping ip地址（或直接填网址<a href="http://www.baidu.com)/">www.baidu.com）</a></li>
+<li>安装msi文件：msiexec /package “你的msi文件的路径”</li>
+</ul>
+<h3 id="3、注意事项"><a href="#3、注意事项" class="headerlink" title="3、注意事项"></a>3、注意事项</h3><ul>
+<li>在此命令体系中，文件夹之间的分割使用<strong>\斜杠</strong></li>
+<li>命令使用**/斜杠**</li>
+</ul>
+<h2 id="Linux系统命令"><a href="#Linux系统命令" class="headerlink" title="Linux系统命令"></a>Linux系统命令</h2><h3 id="1、呼出控制台"><a href="#1、呼出控制台" class="headerlink" title="1、呼出控制台"></a>1、呼出控制台</h3><p>ctrl+alt+t</p>
+<h3 id="2、操作指令"><a href="#2、操作指令" class="headerlink" title="2、操作指令"></a>2、操作指令</h3><ul>
+<li><p>查看文件夹：ls</p>
+</li>
+<li><p>查看包含隐藏文件的list（-a包含. 和..）：ls -a</p>
+</li>
+<li><p>查看包含隐藏文件的list（-A不包含. 和..）：ls -A</p>
+</li>
+<li><p>查看包含文件信息的list：ls -ls</p>
+</li>
+<li><p>直接查看某文件的信息：ll a</p>
+</li>
+<li><p>直接跳转到home文件夹：cd ~</p>
+</li>
+<li><p>跳转回之前的文件夹：cd -</p>
+</li>
+<li><p>回到上一级文件夹：cd ..</p>
+</li>
+<li><p>回到上三级文件夹：cd ../../..</p>
+</li>
+<li><p>显示当前路径：pwd</p>
+</li>
+<li><p>创建文件夹：mkdir</p>
+</li>
+<li><p>递归创建多级文件夹（里面不能有文件）：mkdir -p a/b/c</p>
+</li>
+<li><p>递归删除多级文件夹（里面不能有文件）：rmdir -p a/b/c</p>
+</li>
+<li><p>删除a文件：rm a</p>
+</li>
+<li><p>删除a文件夹（仅删除空文件夹）：rmdir a</p>
+</li>
+<li><p>删除a文件夹及其下的所有文件夹、文件（-r递归删除,-f表示强制删除,-v显示指令执行过程）：rm -rf a 或者 rm -r a  或者rm -r -f a</p>
+</li>
+<li><p>删除时增加提示（-i互动模式，删除前进行指令提示）：rm -r -i a</p>
+</li>
+<li><p>在b文件夹下创建a.txt文件：touch a.txt</p>
+</li>
+<li><p>复制a.txt文件到b文件夹：cp a.txt b</p>
+</li>
+<li><p>复制a.txt文件到上一级的b文件夹下，改名为c.txt：cp a.txt ../b/c.txt</p>
+</li>
+<li><p>移动a.txt文件到c文件夹：mv a.txt a/b/c</p>
+</li>
+<li><p>移动时显示文件移动过程：mv a/b/c/* x/y/z -v</p>
+</li>
+<li><p>修改文件名：mv a.txt b.txt</p>
+</li>
+<li><p>强制覆盖（-f）：mv -f x/y/z/abc a/b/c</p>
+</li>
+<li><p>同名跳过（-n）：mv -n x/y/z/abc a/b/c</p>
+</li>
+<li><p>查看环境变量配置信息：env</p>
+</li>
+<li><p>设置环境变量（从/home开始）：WS=/home/zh/Desktop/x/y/z</p>
+</li>
+<li><p>跳转到环境变量：cd $WS</p>
+</li>
+<li><p>发布环境变量，使所有用户都可以使用：export ws</p>
+</li>
+<li><p>创建压缩tar文件（c：压缩，v：显示打包过程，f：打包后的文件名）：tar -cvf a.tar a.txt</p>
+</li>
+<li><p>多个文件联合打包：tar -cvf pack.tar abc ab</p>
+</li>
+<li><p>解压到当前文件夹：tar -xvf pack.tar</p>
+</li>
+<li><p>解压到a文件夹中（-C表示欲解压到的目录）：tar -xvf pack.tar -C a</p>
+</li>
+<li><p>创建zip压缩文件（文件夹内的内容不会被添加）：zip pack.zip a.txt desk.tar</p>
+</li>
+<li><p>创建zip压缩文件（使用-r将文件夹中的内容递归压缩，加v显示压缩过程）：zip -rv a.zip a</p>
+</li>
+<li><p>指定创建zip压缩文件时压缩等级（1-9，耗时增加，压缩效果增强）：zip -rv9 d.zip a</p>
+</li>
+<li><p>创建压缩文件后将原文件删除：zip -rvm k.zip a</p>
+</li>
+<li><p>解压zip文件到当前文件夹：unzip d.zip</p>
+</li>
+<li><p>解压zip文件到my文件夹中（-d指定文件解压位置）： unzip -d my d.zip</p>
+</li>
+<li><p>创建gz格式压缩文件（只能压缩文件，不能压缩文件夹）：gzip -c k &gt;d.gz</p>
+</li>
+<li><p>将a文件夹中的文件都进行压缩（单个压缩）：gzip -r a</p>
+</li>
+<li><p>将a文件夹中的压缩文件都进行解压：gunzip -r a</p>
+</li>
+<li><p>解压某.gz格式压缩文件：gunzip k.gz</p>
+</li>
+<li><p>修改root账户密码：sudo passwd root</p>
+</li>
+<li><p>进入root账户：su root</p>
+</li>
+<li><p>创建新用户：useradd hello</p>
+</li>
+<li><p>创建新用户密码：passwd hello</p>
+</li>
+<li><p>切换用户hello：su hello</p>
+</li>
+<li><p>cat命令：</p>
+<ul>
+<li><p>逐行显示文本内容：cat -n a.txt</p>
+</li>
+<li><p>逐行显示文本内容及符号（比如下面显示出Tab符^I）：cat -A a.txt</p>
+<img src="C:\Users\hua.zhang.pc\AppData\Roaming\Typora\typora-user-images\image-20201105171527661.png" alt="image-20201105171527661" style="zoom:50%;" />
+</li>
+<li><p>连接两个文件并生成总文件，内容连接：cat a.txt b.txt &gt;c.txt</p>
+</li>
+</ul>
+</li>
+<li><p>分屏显示（b向前翻页，空格向后翻页，回车下一行，q退出）：more c.txt</p>
+</li>
+<li><p>显示头部：head c.txt</p>
+</li>
+<li><p>进入文件浏览，并分屏显示（“pgup”和“pgdn”翻页，键入“q”退出）：less c.txt</p>
+</li>
+<li><p>下载文件：wget https://网址</p>
+</li>
+</ul>
+<h3 id="3、Linux查看用户（只能root账户查看）"><a href="#3、Linux查看用户（只能root账户查看）" class="headerlink" title="3、Linux查看用户（只能root账户查看）"></a>3、Linux查看用户（只能root账户查看）</h3><ol>
+<li><p>回到根盘：cd /</p>
+</li>
+<li><p>进入etc文件夹：etc</p>
+</li>
+<li><p>查看文件清单：ls</p>
+</li>
+<li><p>查看/编辑passwd文件：</p>
+<ul>
+<li><p>查看文件：cat passwd</p>
+</li>
+<li><p>编辑文件：view passwd（需要使用:q指令退回）</p>
+</li>
+</ul>
+</li>
+<li><p>展示内容：</p>
+<ul>
+<li>zh：账号名</li>
+<li>x：密码</li>
+<li>1000：uid，最多65535个，前500个系统使用</li>
+<li>1000：组id</li>
+<li>zh,,,：描述</li>
+<li>/home…：主目录</li>
+</ul>
+<img src="C:\Users\hua.zhang.pc\AppData\Roaming\Typora\typora-user-images\image-20201105141045459.png" alt="image-20201105141045459" style="zoom:80%;" />
+
+</li>
+</ol>
+<h3 id="4、查看shadow影子文件"><a href="#4、查看shadow影子文件" class="headerlink" title="4、查看shadow影子文件"></a>4、查看shadow影子文件</h3><p><img src="C:\Users\hua.zhang.pc\AppData\Roaming\Typora\typora-user-images\image-20201105142905421.png" alt="image-20201105142905421"></p>
+<ol>
+<li>最前面的一长串：系统算法加密后密码</li>
+<li>18570：创建时间距1970年1月1日的天数</li>
+<li>0：表示密码随时可以修改，设置1时为1天最多可以修改1次，设置10为10天最多可以修改1次</li>
+<li>99999：密码有效期时间，单位为天</li>
+<li>7：距到期前7天进行提醒修改密码</li>
+</ol>
+<h3 id="5、创建用户并赋予权限"><a href="#5、创建用户并赋予权限" class="headerlink" title="5、创建用户并赋予权限"></a>5、创建用户并赋予权限</h3><p><img src="C:\Users\hua.zhang.pc\AppData\Roaming\Typora\typora-user-images\image-20201105144602995.png" alt="image-20201105144602995"></p>
+<p><img src="C:\Users\hua.zhang.pc\AppData\Roaming\Typora\typora-user-images\image-20201105151703737.png" alt="image-20201105151703737"></p>
+<ol>
+<li>-u：添加用户ID</li>
+<li>-g：设置组</li>
+<li>-G：设置附加组</li>
+<li>-d：建立home目录，一般在前面要加上-m</li>
+<li>-s：添加权限，/bin/bash为添加所有权限</li>
+<li>zh2：所设置的账户名</li>
+</ol>
+<h3 id="6、使用VIM编辑文档"><a href="#6、使用VIM编辑文档" class="headerlink" title="6、使用VIM编辑文档"></a>6、使用VIM编辑文档</h3><ol>
+<li><p>下载vim：sudo apt-get install vim</p>
+</li>
+<li><p>使用vim：vim a.txt</p>
+</li>
+<li><p>编辑：在光标处按“i”可以在该位置进行插入操作。按“o”进行换行插入操作</p>
+</li>
+<li><p>退出：</p>
+<ul>
+<li>“:q!”：不保存强制退出</li>
+<li>“:wq”：保存并退出</li>
+</ul>
+</li>
+</ol>
+<p>感谢观看！</p>
+]]></content>
+      <categories>
+        <category>棋魂</category>
+      </categories>
+      <tags>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生命的意义</title>
+    <url>/2021/01/20/%E7%94%9F%E5%91%BD%E7%9A%84%E6%84%8F%E4%B9%89/</url>
+    <content><![CDATA[<h3 id="生命就像一条大河"><a href="#生命就像一条大河" class="headerlink" title="生命就像一条大河"></a>生命就像一条大河</h3><p>就好像我也曾生长过。。。</p>
+<p>苍空碧落，羽转回风。。。</p>
+<p>我从地狱来</p>
+<p>要往天堂去</p>
+<p>正路过人间</p>
+]]></content>
+      <categories>
+        <category>琴心</category>
+      </categories>
+      <tags>
+        <tag>C&#39;est la vie</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>认知觉醒</title>
+    <url>/2021/01/22/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</url>
+    <content><![CDATA[<h3 id="认知觉醒"><a href="#认知觉醒" class="headerlink" title="认知觉醒"></a>认知觉醒</h3><blockquote>
+<p>我发现每天有事情做不代表觉醒，每天都努力也不代表觉醒，真正的觉醒是一种发自内心的渴望，立足长远，保持耐心，运用认知的力量与时间做朋友；我发现人与人之间的根本差异是认知能力上的差异，因为认知影响选择，而选择改变命运，所以成长的本质就是让大脑的认知变得更加清晰。</p>
+</blockquote>
+<p>这是一部可以穿透时间的个人成长方法论。通过“大脑构造、潜意识、元认知”等思维规律，你将真正看清自己；通过“深度学习、关联、反馈”事物规律，你将洞悉如何真正成事！</p>
+<p>如果对自己不了解，我们就会被人的原始天性束缚，这往往会让我们感到很痛苦。然而，如果了解大脑知识，我们就可以观察并指导自己，运用认知的力量去克服天性，从而获得长久而清晰的内在动力，让我们告别绝大多数人生痛苦。</p>
+<p>一个人的认知越清晰，行动就越坚定。本书解答了很多问题：</p>
+<p>为什么我们做事总是急于求成、避难趋易？</p>
+<p>所谓耐心，就是要“咬牙坚持、死磕到底”吗？</p>
+<p>如何彻底告别用“三分钟热情”和“打鸡血”的方式做事？</p>
+<p>如何保持极度专注？如何消除焦虑？如何提高学习能力？……</p>
+<p>一个人真正的耐心从来不是苦哈哈的毅力支撑，而是具有长远目光的结果。只要了解大脑规律，并知晓诸如“复利效应、舒适区边缘、学习权重比、学习平台期”等规律，我们就可以大幅提升我们的耐心水平。</p>
+<p>你觉得呢？</p>
+]]></content>
+      <categories>
+        <category>书气</category>
+      </categories>
+      <tags>
+        <tag>阅读 认知</tag>
+      </tags>
+  </entry>
+</search>
